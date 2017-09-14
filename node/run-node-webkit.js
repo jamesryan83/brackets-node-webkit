@@ -25,8 +25,8 @@ maxerr: 50, node: true */
 	function startnw(nwpath, basepath, callback) {
         console.log("Running: " + basepath + ", using: " + nwpath);
         
-        // some validation to prevent starting node-webkit with invalid inputs
-        // otherwise it fails silently and leaves a few nw.exe processes running
+//         some validation to prevent starting node-webkit with invalid inputs
+//         otherwise it fails silently and leaves a few nw.exe processes running
         
         // node-webkit projects need a package.json
         var packagePath = path.join(basepath, "package.json");
@@ -40,13 +40,14 @@ maxerr: 50, node: true */
             return callback("Error loading package.json.  File was empty or invalid");
         }        
         
-        // parse the package.json file if there was one
+        // parse the package.json file
         try {
-            packageJson = JSON.parse(packageJson);            
+            packageJson = JSON.parse(packageJson);
         } catch (ex) {
             return callback("Error parsing package.json");
         }
                 
+        // missing main in package.json
         if (!packageJson.main) {
             return callback("Missing 'main' property from package.json");
         }
@@ -58,16 +59,20 @@ maxerr: 50, node: true */
         
         // run node-webkit
         exec(nwpath + " " + basepath, function (error, stdout, stderr) {
-            if (error) {
+            if (error && error.killed !== false) {
                 console.log(error)
                 return callback(
                     "<p>Error running project<br>" + basepath + "<br>    using<br>" + nwpath + 
                     "<br><br>There may be a problem with your nw.exe path or you may not have " + 
                     "a node-webkit project currently open in Brackets</p>");
+            } else {
+                return callback();
             }
-            
-            return callback();
         });
+    
+        setTimeout(function () {
+            return callback();
+        }, 3000);
 	}
     
 
