@@ -4,7 +4,7 @@ Run the currently open [Brackets](http://brackets.io/) project using [node-webki
 
 ##### To install:
 
-Download this repo and extract it to your extensions folder.  In Brackets from the Help menu click on Show Extensions Folder and then go into the user folder and put it there.
+Download this repo and extract it to your Brackets extensions folder.  In Brackets from the Help menu click on Show Extensions Folder and then go into the user folder and put it there.
 
 If you don't already have the node-webkit sdk you can get it here https://nwjs.io.  Download it and save it anywhere on your PC 
 
