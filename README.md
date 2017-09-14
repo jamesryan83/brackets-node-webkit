@@ -10,7 +10,7 @@ If you don't already have the node-webkit sdk you can get it here https://nwjs.i
 
 #### To use:
 
-1. After installing the extension and node-webkit, in Brackets set the absolute path to nw.exe using 'Set Node-Webkit exe Location' in the File menu (see the first part of the gif below).  nw.exe should be in your node-webkit sdk folder
+1. After installing the extension and node-webkit, in Brackets set the absolute path to nw.exe using 'Set Node-Webkit exe Location' in the File menu (see the first part of the gif below).  You should only need to do this once unless if you move nw.exe.  nw.exe should be in your node-webkit sdk folder
 
 2. Open a project in Brackets that has a [node-webkit package.json](http://docs.nwjs.io/en/latest/References/Manifest%20Format/) file and its startup file (usually index.html)
 
