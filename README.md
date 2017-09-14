@@ -2,13 +2,13 @@
 
 Run the currently open [Brackets](http://brackets.io/) project using [node-webkit](https://github.com/nwjs/nw.js/) (aka nw.js)
 
-##### To install:
+#### To install:
 
 Download this repo and extract it to your Brackets extensions folder.  In Brackets from the Help menu click on Show Extensions Folder and then go into the user folder and put it there.
 
 If you don't already have the node-webkit sdk you can get it here https://nwjs.io.  Download it and save it anywhere on your PC 
 
-##### To use:
+#### To use:
 
 1. Set the absolute path to nw.exe (from your node-webkit sdk folder) using the 'Set Node-Webkit exe Location' in the file menu.  Put it anywhere on your computer and in it there should be a file called nw.exe, the path of which goes into the set exe location dialog
 
