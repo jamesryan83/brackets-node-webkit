@@ -80,9 +80,7 @@ define(function (require, exports, module) {
                     return false;
                 }
                 
-                prefs.set("nwpath", nwPath);
-                alert("nw.exe path changed to : " + nwPath);
-                
+                prefs.set("nwpath", nwPath);                
             } else {
                 alert("path can't be empty");
                 return false;

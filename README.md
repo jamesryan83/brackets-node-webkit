@@ -23,7 +23,7 @@ If you don't already have the node-webkit sdk you can get it here https://nwjs.i
 
 #### Other notes
 
-This program runs node-webkit as you would from the command line, using a node child_process it calls exec(absolute nw.exe path + current Brackets project path)
+This program runs node-webkit as you would from the command line, using a node child_process it calls exec(absolute nw.exe path + " " + current Brackets project path)
 
 If you have an invalid node-webkit package.json file, there is a chance this extension can leave node-webkit processes running. 
 This is because if an invalid package.json is passed to nw.exe it can fail silently and leave its process running.
