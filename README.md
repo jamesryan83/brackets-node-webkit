@@ -27,7 +27,7 @@ This program runs node-webkit as you would from the command line, using a node c
 
 If you have an invalid node-webkit package.json file, there is a chance this extension can leave node-webkit processes running. 
 This is because if an invalid package.json is passed to nw.exe it can fail silently and leave its process running.
-A few checks are in place to try to prevent this happening.  If you clicked run and nothing happens, it's likely the nw.exe process is running and you'll have to kill it manually
+A few checks are in place to try to prevent this happening.  If you clicked run and nothing happens, it's likely the nw.exe process is running and you'll have to kill it manually in Task Manager
 
 #### Example
 
