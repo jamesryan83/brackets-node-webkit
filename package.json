@@ -1,0 +1,17 @@
+{
+    "name": "brackets-node-webkit",
+    "title": "Brackets Node-Webkit",
+    "version": "1.0.0",
+    "description": "Run the currently open Brackets project using Node-Webkit (aka nw.js)",
+    "engines": {
+        "brackets": ">=1.7.0"
+    },
+    "author": "James Ryan (https://github.com/jamesryan83)",
+    "license": "MIT",
+    "keywords": [
+        "brackets-extension",
+        "node-webkit",
+        "nw.js"
+    ],
+    "i18n": ["en"]
+}
