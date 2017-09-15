@@ -2,7 +2,7 @@
 /*global define, $, brackets, window */
 
 
-// using this project as an example...
+// using this project as a guide...
 // https://github.com/brackets-beautify/brackets-beautify/blob/master/main.js
 
 // some other helpful links
